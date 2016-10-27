@@ -9,6 +9,18 @@
             <input type="text" ng-model="message"/>
             <br/><br/>
             {{ message }}
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr ng-repeat="employee in employees">
+                    <td>{{ employee.name }} </td>
+                    <td>{{ employee.age }} </td>
+                </tr>
+
+            </table>
+
         </div>
     </body>
 </html>
