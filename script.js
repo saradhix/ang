@@ -3,6 +3,8 @@ var myApp = angular.module("myModule",[]);
 var myController = function($scope)
 {
     $scope.message = "My controller";
+    var employee = { firstname: "Vijay", lastname: "Indurthi", gender:"Male"};
+    $scope.employee = employee;
 }
 
 myApp.controller("myController", myController);
